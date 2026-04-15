@@ -29,7 +29,7 @@
     <header id="header" class="header">
         <div class="container nav-container">
             <a href="#" class="logo">
-                <i data-lucide="activity"></i>
+
                 NEXUS
             </a>
             <nav class="nav-links">
@@ -40,7 +40,8 @@
             </nav>
             <div class="nav-buttons">
                 <a href="#" class="wa-link"><i data-lucide="message-circle"></i> Falar com gerente</a>
-                <a href="https://nexus-frontend-ok12.onrender.com/" class="btn btn-primary">Login / Criar conta <i data-lucide="arrow-right"></i></a>
+                <a href="https://nexus-frontend-ok12.onrender.com/" class="btn btn-primary">Login / Criar conta <i
+                        data-lucide="arrow-right"></i></a>
             </div>
             <button class="mobile-menu-btn" aria-label="Menu">
                 <i data-lucide="menu"></i>
@@ -51,27 +52,65 @@
     <!-- Hero Section -->
     <section id="inicio" class="hero">
         <div class="hero-bg-img">
-            <img src="img/reuniao.png" alt="Reunião de Afiliados">
+            <img src="https://images.unsplash.com/photo-1464802686167-b939a6910659?auto=format&fit=crop&q=80&w=2000"
+                alt="Espaço Profundo Nexus">
             <div class="hero-overlay"></div>
         </div>
         <div class="container hero-content">
-            <div class="hero-text-content">
-                <h1 class="hero-title">
-                    A Nova Era dos<br> Afiliados de <span>Elite</span>
-                </h1>
-                <p class="hero-subtitle">
-                    Conecte-se com as melhores campanhas de rifas e tenha as deals e comissões mais agressivas do
-                    mercado. Onde o topo não é o limite, é o ponto de partida.
-                </p>
-                <div class="hero-actions">
-                    <a href="https://nexus-frontend-ok12.onrender.com/" class="btn btn-primary btn-large">Entre ou Cadastre-se</a>
-                    <a href="https://nexus-frontend-ok12.onrender.com/" class="app-store-btn">
-                        <i data-lucide="monitor"></i>
-                        <div class="app-store-texts">
-                            <span class="small">Acessar via Web</span>
-                            <span class="big">Painel Nexus</span>
+            <div class="hero-flex">
+                <div class="hero-text-content">
+                    <h1 class="hero-title">
+                        A Nova Era dos<br> Afiliados de <span>Elite</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Conecte-se com as melhores campanhas de rifas e tenha as deals e comissões mais agressivas do
+                        mercado. Onde o topo não é o limite, é o ponto de partida.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="https://nexus-frontend-ok12.onrender.com/" class="btn btn-primary btn-large">Entre ou
+                            Cadastre-se</a>
+                        <a href="https://nexus-frontend-ok12.onrender.com/" class="app-store-btn">
+                            <i data-lucide="monitor"></i>
+                            <div class="app-store-texts">
+                                <span class="small">Acessar via Web</span>
+                                <span class="big">Painel Nexus</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-rocket">
+                    <div class="astronaut-wrapper">
+                        <div class="astronaut-container">
+                            <svg viewBox="0 0 200 200" class="astronaut-svg">
+                                <defs>
+                                    <linearGradient id="suitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#e0e0e0;stop-opacity:1" />
+                                    </linearGradient>
+                                    <radialGradient id="visorGrad" cx="50%" cy="50%" r="50%">
+                                        <stop offset="0%" style="stop-color:#14f9a0;stop-opacity:0.8" />
+                                        <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+                                    </radialGradient>
+                                </defs>
+                                <!-- Body -->
+                                <circle cx="100" cy="100" r="40" fill="url(#suitGrad)" />
+                                <rect x="80" y="130" width="40" height="50" rx="10" fill="url(#suitGrad)" />
+                                <!-- Helmet -->
+                                <circle cx="100" cy="80" r="35" fill="url(#suitGrad)" />
+                                <ellipse cx="100" cy="80" rx="25" ry="18" fill="url(#visorGrad)" />
+                                <!-- Arms -->
+                                <rect x="60" y="110" width="15" height="40" rx="5" fill="url(#suitGrad)"
+                                    transform="rotate(-20 60 110)" />
+                                <rect x="125" y="110" width="15" height="40" rx="5" fill="url(#suitGrad)"
+                                    transform="rotate(20 125 110)" />
+                                <!-- Details -->
+                                <circle cx="90" cy="140" r="3" fill="#14f9a0" />
+                                <circle cx="100" cy="140" r="3" fill="#14f9a0" />
+                                <circle cx="110" cy="140" r="3" fill="#14f9a0" />
+                            </svg>
                         </div>
-                    </a>
+                        <div class="floating-stars"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -205,7 +244,7 @@
         <div class="container footer-content">
             <div class="footer-left">
                 <a href="#" class="logo">
-                    <i data-lucide="activity"></i>
+
                     NEXUS
                 </a>
                 <p>Conectando afiliados de elite às maiores oportunidades do mercado de rifas com tecnologia e
