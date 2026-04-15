@@ -259,19 +259,47 @@ section, .footer { position: relative; z-index: 2; }
 
 /* --- RESPONSIVE --- */
 @media (max-width: 992px) {
-    .awards-grid, .app-grid { grid-template-columns: 1fr; text-align: center; }
+    .awards-grid, .app-grid { grid-template-columns: 1fr; text-align: center; gap: 40px; }
     .hero-text-content { margin: 0 auto; text-align: center; }
     .hero-actions { justify-content: center; }
     .awards-text p, .app-text p { margin-inline: auto; }
-    .hero-title { font-size: 4rem; }
+    .hero-title { font-size: 3.5rem; }
     .megatext { font-size: 1.8rem; }
     .app-buttons { justify-content: center; }
+    .nav-links { display: none; }
+    .nav-buttons { display: none; }
 }
 
 @media (max-width: 768px) {
-    .nav-links, .nav-buttons { display: none; }
+    .header { padding: 15px 0 !important; }
     .mobile-menu-btn { display: block; }
-    .hero-title { font-size: 3rem; }
-    .hero-actions { flex-direction: column; }
-    .megatext { font-size: 1.5rem; }
+    
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 0; left: 0; width: 100%; height: 100vh;
+        background: #000;
+        z-index: 90;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+    
+    .nav-active .nav-links { display: flex; }
+    .nav-links a { font-size: 1.5rem; }
+
+    .hero-title { font-size: 2.5rem; }
+    .hero-subtitle { font-size: 1rem; }
+    .hero-actions { flex-direction: column; width: 100%; max-width: 300px; margin-inline: auto; }
+    .hero-actions .btn, .hero-actions .app-store-btn { width: 100%; justify-content: center; }
+
+    .awards-text h2, .app-text h2 { font-size: 2.5rem; }
+    .p-sub { font-size: 2rem; }
+    .phone-mockup { width: 260px; height: 520px; }
+    
+    .footer-content { flex-direction: column; text-align: center; }
+    .footer-left p { margin-inline: auto; }
+    .footer-links { justify-content: center; flex-wrap: wrap; }
+    .footer-bottom { flex-direction: column; gap: 10px; text-align: center; }
 }
